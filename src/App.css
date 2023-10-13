@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.search-box{
+  border:0px;
+  background: transparent;
+  outline: none;
+}
+.search-container{
+  border-color: transparent ;
+  background-color: hsla(180,4%,55%,.15);
+
+}
+html{
+  background: rgb(134 144 144 / 14%)!important;
+} 
+body{
+  background: transparent !important;
+}
+.background-white{
+  background: white;
+}
+.border-radius{
+  border-radius: 20px;
+}
+.menu{
+  color:gray;
+}
+.menu > div{
+  padding: 5px 15px;
+  margin: 0px 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu .active{
+  color:rgb(2,141,255);
+  border-bottom: 2px solid rgb(2,141,255) ;
 }
+.profile{
+ color:gray;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.cursor-pointer{
+  cursor:pointer;
+}
+.profile>div{
+  padding-left: 15px;
+  font-size: 20px;
+}
+.username{
+  color:black;
+ 
+}
+.profile> div > button > svg{
+   font-size: 20px;
+   color:gray;
+}
+.content-left > div{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+}
+.content-left >div > svg{
+  color:rgb(2,141,255);
+  font-size: 25px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.status{
+
+}
+.content-status{
+  height:350px;
+}
+.status-profile{
+       position: relative;
+       bottom:20em;
+      left:1em;
+       border: 3px solid rgb(2,141,255);
+       border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.status> .name{
+  position: relative;
+  color:white;
+  height: fit-content;
+  width:fit-content;
+  bottom: 7em;
+  left: 1em;
+}
+.image{
+  border-radius: 25px;
+}
+.border{
+  border-radius: 10px;
+}
+.create-post{
+  color:gray;
+  padding: 30px 10px;
+}
+.create-post .search-box{
+  border-color: transparent;
+  background-color: hsla(180,4%,55%,.15);
+  border-radius: 20px;
+  padding:10px;
+  margin-left: 10px !important;
+  
+  
+
+}
+.br-30{
+  border-radius: 30px;
+}
+.postbutton{
+  border-radius: 20px !important;
+}
+.br-10{
+  border-radius: 10px !important;
+}
+.color-gray{
+  color: gray;
+}
+.menu-icon-hover:hover {
+  color:#2e81f4; /* Change the background color on hover */
+  border-radius: 10px;
+  
+  
+  
+  cursor: pointer; /* Change the cursor to a pointer on hover (optional) */
+}
+.btn{
+     border-radius: 20px;
+}
+.post-icon > svg{
+  margin-right: 10px;
+  font-size: 20px;
+
+}
+@media  (max-width:768px) {
+  .content-left{
+    display:none;
+  }
+  .search-container{
+    display: none;
+  }
+  .menu-icon-hover{
+    display: none;
+  }
+  .profile{
+    display: none;
+  }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
